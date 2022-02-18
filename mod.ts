@@ -1,2 +1,2 @@
-export * from "./src/sieve.ts"
+export * from "./src/FindPrimes.ts"
 

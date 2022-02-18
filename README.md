@@ -4,3 +4,4 @@ A simple module to find all prime numbers below a certain given number. It is a 
 ## Functionality 
 
 Usage example 
+
