@@ -11,7 +11,7 @@ deno run --allow-net https://deno.land/x/eratosthenes_sieve@v0.1/usageExample.ts
 ```
 
 ### Usage example Code ### 
-To run the module as code input the 
+To run the module as code. 
 ```
 import { Sieve } from "https://deno.land/x/eratosthenes_sieve@v0.1/mod.ts";
 
