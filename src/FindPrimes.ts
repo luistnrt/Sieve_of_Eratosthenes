@@ -1,27 +1,29 @@
-export class sieve { 
-   
-   public static calculate_primes(num1: number): array { 
- 
-         const num = num1;
-         const findPrimes = (num = 10) => {
-            const numArr = new Array(num + 1);
-            numArr.fill(true);
-            numArr[0] = numArr[1] = false;
-               for (let i = 2; i <= Math.sqrt(num); i++) {
-                  for (let j = 2; i * j <= num; j++){
-                     numArr[i * j] = false;
-                  }
-               }
-               return numArr.reduce((acc, val, ind) => {
-                  if(val){
-                     return acc.concat(ind);
-                  }else{
-                     return acc;
-                  };
-               },[]);
-            };
-               console.log(findPrimes(num));
+export class Sieve { 
+   public static primeSieve(limit: number ) { 
 
-   }
+       let arr: number[] = new Array(limit - 1)
+       for (let i:number = 0; i < arr.length; i++) {
+       arr[i] = i+2
+       }
+       for (let j:number = 0; j< arr.length; j++) {
+       let checkLimit:number = arr[j] * arr[j]
+       if (arr[j] != 0 && checkLimit < limit) {
+       sievePrime(arr[j], j)
+       }
+       }
+       function sievePrime(multipleOf:number, position:number) {
+       for (let k:number = position; k < arr.length; k += multipleOf){
+       if (arr[k] != 0 && arr[k] != multipleOf) {
+       arr[k] = 0;
+       }
+       }
+       }
+       let arr2: number[] = [];
+       for (let l:number = 0; l<arr.length; l++) {
+       if (arr[l] != 0) {
+       arr2.push(arr[l]);
+       }
+       }
+       return arr2;
+       }
 }
-
