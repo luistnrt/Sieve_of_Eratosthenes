@@ -11,7 +11,7 @@ deno run --allow-net https://deno.land/x/eratosthenes_sieve@v0.1/usageExample.ts
 ```
 
 ### Usage example Code ### 
-To run the module as code. 
+To run the module as code.
 ```
 import { Sieve } from "https://deno.land/x/eratosthenes_sieve@v0.1/mod.ts";
 
@@ -22,5 +22,6 @@ console.log("Youre Primes are " + Sieve.primeSieve())
 ### Deno Test ###
 To test the modul via Deno run the following code. 
 ```
+//Deno testing functions correctly using the code, however there are still problems runninng the following command line. 
 deno run --allow-net "https://deno.land/x/eratosthenes_sieve@v0.1/src/FindPrimes_test.ts";
 ```
