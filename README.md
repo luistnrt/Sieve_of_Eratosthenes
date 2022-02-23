@@ -7,7 +7,7 @@ In case any errors occur or code improvements should be built in, please contact
 ### Usage example Command line input ###
 To run the usage example of the module input the following line into your Command prompt or terminal and run it.
 ```
-deno run --allow-net https://deno.land/x/eratosthenes_sieve@v0.1/usageExample.ts
+deno run --allow-net https://deno.land/x/eratosthenes_sieve@v1.1.1/usageExample.ts
 ```
 
 ### Usage example Code ### 
@@ -23,5 +23,5 @@ console.log("Youre Primes are " + Sieve.primeSieve())
 To test the modul via Deno run the following code. 
 ```
 //Deno testing functions correctly using the code, however there are still problems runninng the following command line. 
-deno run --allow-net "https://deno.land/x/eratosthenes_sieve@v0.1/src/FindPrimes_test.ts";
+deno test --allow-net "https://deno.land/x/eratosthenes_sieve@v1.1.1/src/FindPrimes_test.ts"
 ```
