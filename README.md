@@ -15,7 +15,7 @@ To run the module as code.
 ```
 import { Sieve } from "https://deno.land/x/eratosthenes_sieve@v0.1/mod.ts";
 
-// Input your number into the function below. Alle primes untill that number will be shown.
+// Input any number into the function below. All primes between 0 and that number will be shown.
 console.log("Youre Primes are " + Sieve.primeSieve()) 
 ```
 
